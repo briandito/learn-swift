@@ -368,7 +368,6 @@
                     <connections>
                         <outlet property="deviceImage" destination="xr8-bj-qNL" id="vRp-Jz-liB"/>
                         <outlet property="deviceImageView" destination="xr8-bj-qNL" id="IQe-cy-ROw"/>
-                        <outlet property="playButtonTapped" destination="a3Z-jH-80c" id="RBi-5i-1vL"/>
                         <outlet property="playVisualEffectView" destination="SYz-y4-zSu" id="hpw-na-EDw"/>
                         <outlet property="titleLabel" destination="21q-VC-jsO" id="99H-rW-ogO"/>
                     </connections>
@@ -377,10 +376,10 @@
             </objects>
             <point key="canvasLocation" x="-80.799999999999997" y="211.84407796101951"/>
         </scene>
-        <!--View Controller-->
+        <!--Section View Controller-->
         <scene sceneID="cKT-Fz-OQz">
             <objects>
-                <viewController id="nEe-xz-0Bw" sceneMemberID="viewController">
+                <viewController id="nEe-xz-0Bw" customClass="SectionViewController" customModule="DesignCode_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cv5-zr-P0m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
