@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="6rm-4B-rEv">
             <objects>
-                <viewController id="4IJ-hW-Q9o" sceneMemberID="viewController">
+                <viewController id="4IJ-hW-Q9o" customClass="ViewController" customModule="DesignCode_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uu8-E2-gje">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,38 @@
                                                     <constraint firstAttribute="width" constant="123" id="TWP-0H-RSb"/>
                                                 </constraints>
                                             </imageView>
+                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYz-y4-zSu">
+                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LGP-FM-QiS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-jH-80c">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <state key="normal" image="Action-Play-Small"/>
+                                                            <connections>
+                                                                <action selector="playButtonTapped:" destination="4IJ-hW-Q9o" eventType="touchUpInside" id="aNI-AS-sgh"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="a3Z-jH-80c" firstAttribute="leading" secondItem="LGP-FM-QiS" secondAttribute="leading" id="OPq-Xz-FyJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="a3Z-jH-80c" secondAttribute="bottom" id="Pvi-ej-hGL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="a3Z-jH-80c" secondAttribute="trailing" id="mBt-4h-Ouu"/>
+                                                        <constraint firstItem="a3Z-jH-80c" firstAttribute="top" secondItem="LGP-FM-QiS" secondAttribute="top" id="qrk-IH-h4Y"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Qav-jJ-ZYP"/>
+                                                    <constraint firstAttribute="width" constant="50" id="e8T-lE-nn7"/>
+                                                </constraints>
+                                                <blurEffect style="dark"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </visualEffectView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhT-fM-7A1">
                                                 <rect key="frame" x="0.0" y="324" width="375" height="128"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p4e-0v-cIS">
@@ -210,35 +242,6 @@
                                                 </constraints>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
-                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYz-y4-zSu">
-                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LGP-FM-QiS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-jH-80c">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <state key="normal" image="Action-Play-Small"/>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="a3Z-jH-80c" firstAttribute="leading" secondItem="LGP-FM-QiS" secondAttribute="leading" id="OPq-Xz-FyJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="a3Z-jH-80c" secondAttribute="bottom" id="Pvi-ej-hGL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="a3Z-jH-80c" secondAttribute="trailing" id="mBt-4h-Ouu"/>
-                                                        <constraint firstItem="a3Z-jH-80c" firstAttribute="top" secondItem="LGP-FM-QiS" secondAttribute="top" id="qrk-IH-h4Y"/>
-                                                    </constraints>
-                                                </view>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Qav-jJ-ZYP"/>
-                                                    <constraint firstAttribute="width" constant="50" id="e8T-lE-nn7"/>
-                                                </constraints>
-                                                <blurEffect style="dark"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="25"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -362,10 +365,32 @@
                         <viewLayoutGuide key="safeArea" id="dp9-AT-vYX"/>
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="deviceImage" destination="xr8-bj-qNL" id="vRp-Jz-liB"/>
+                        <outlet property="deviceImageView" destination="xr8-bj-qNL" id="IQe-cy-ROw"/>
+                        <outlet property="playButtonTapped" destination="a3Z-jH-80c" id="RBi-5i-1vL"/>
+                        <outlet property="playVisualEffectView" destination="SYz-y4-zSu" id="hpw-na-EDw"/>
+                        <outlet property="titleLabel" destination="21q-VC-jsO" id="99H-rW-ogO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgM-5U-3Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-80.799999999999997" y="211.84407796101951"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cKT-Fz-OQz">
+            <objects>
+                <viewController id="nEe-xz-0Bw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cv5-zr-P0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7lJ-Su-EDY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsv-GL-gBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="-225"/>
         </scene>
     </scenes>
     <resources>
