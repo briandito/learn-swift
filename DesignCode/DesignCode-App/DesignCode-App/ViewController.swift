@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
     @IBOutlet weak var playVisualEffectView: UIVisualEffectView!
-
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var heroView: UIView!
+    @IBOutlet weak var bookView: UIView!
+    
     @IBAction func playButtonTapped(_ sender: Any) {
         
         let urlString = "https://player.vimeo.com/external/235468301.hd.mp4?s=e852004d6a46ce569fcf6ef02a7d291ea581358e&profile_id=175"
@@ -34,6 +38,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.delegate = self
+        
         titleLabel.alpha = 0
         deviceImageView.alpha = 0
         playVisualEffectView.alpha = 0
@@ -47,3 +53,6 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UIScrollViewDelegate{
+    // scroll functions
+}
