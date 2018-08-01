@@ -54,5 +54,9 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UIScrollViewDelegate{
-    // scroll functions
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView)
+    }
+    
 }
