@@ -336,7 +336,53 @@
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-tf-jJ8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="14"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                            <real key="value" value="0.25"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                            <size key="value" width="0.0" height="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                            <integer key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-6y-G4v">
+                                                                    <rect key="frame" x="-0.6666666666666643" y="0.0" width="304" height="248"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-mA-jc0">
+                                                                            <rect key="frame" x="32" y="60" width="240" height="128"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="B3b-mA-jc0" secondAttribute="trailing" id="Eo2-pu-09f"/>
+                                                                        <constraint firstItem="B3b-mA-jc0" firstAttribute="leading" secondItem="NJb-6y-G4v" secondAttribute="leading" id="LvH-JB-orD"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="B3b-mA-jc0" secondAttribute="bottom" id="d7A-iZ-dIB"/>
+                                                                        <constraint firstItem="B3b-mA-jc0" firstAttribute="top" secondItem="NJb-6y-G4v" secondAttribute="top" id="zph-s0-GpZ"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="14"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
                                                         </view>
+                                                        <constraints>
+                                                            <constraint firstItem="c3w-tf-jJ8" firstAttribute="top" secondItem="Chc-ms-kMQ" secondAttribute="top" id="LGn-k4-d1p"/>
+                                                            <constraint firstItem="c3w-tf-jJ8" firstAttribute="leading" secondItem="Chc-ms-kMQ" secondAttribute="leading" id="PnR-Gr-3Y6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="c3w-tf-jJ8" secondAttribute="trailing" id="X0Q-Jc-GmV"/>
+                                                            <constraint firstAttribute="bottom" secondItem="c3w-tf-jJ8" secondAttribute="bottom" id="cw4-VW-3V5"/>
+                                                        </constraints>
                                                         <size key="customSize" width="304" height="248"/>
                                                     </collectionViewCell>
                                                 </cells>
