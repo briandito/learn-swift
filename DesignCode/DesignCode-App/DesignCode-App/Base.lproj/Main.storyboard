@@ -317,22 +317,39 @@
                                                 <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-Vi-bfF">
-                                                <rect key="frame" x="20" y="82" width="304" height="248"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3El-JK-Skg">
+                                                <rect key="frame" x="0.0" y="82" width="375" height="248"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="248" id="gZj-0f-ies"/>
-                                                    <constraint firstAttribute="width" constant="304" id="tXv-UM-oGx"/>
+                                                    <constraint firstAttribute="height" constant="248" id="cKZ-zX-DFW"/>
                                                 </constraints>
-                                            </view>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ztm-Ws-kLG">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Chc-ms-kMQ">
+                                                        <rect key="frame" x="35.666666666666664" y="0.0" width="304" height="248"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                        <size key="customSize" width="304" height="248"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="yKU-Vi-bfF" secondAttribute="bottom" constant="50" id="HgE-3L-4MY"/>
+                                            <constraint firstItem="3El-JK-Skg" firstAttribute="leading" secondItem="XBw-QV-867" secondAttribute="leading" id="1sW-Ms-gOI"/>
                                             <constraint firstAttribute="height" constant="380" id="QZq-ZA-T4G"/>
+                                            <constraint firstItem="XBw-QV-867" firstAttribute="trailing" secondItem="3El-JK-Skg" secondAttribute="trailing" id="XBU-kU-Rwk"/>
                                             <constraint firstItem="LEX-jy-eWF" firstAttribute="top" secondItem="0m5-o6-r0a" secondAttribute="top" constant="50" id="YF8-zR-PHL"/>
+                                            <constraint firstItem="XBw-QV-867" firstAttribute="bottom" secondItem="3El-JK-Skg" secondAttribute="bottom" constant="50" id="aId-KL-O1X"/>
                                             <constraint firstItem="LEX-jy-eWF" firstAttribute="leading" secondItem="XBw-QV-867" secondAttribute="leading" constant="20" id="bi5-XO-Vac"/>
-                                            <constraint firstItem="yKU-Vi-bfF" firstAttribute="leading" secondItem="XBw-QV-867" secondAttribute="leading" constant="20" id="dOI-Ih-5br"/>
                                             <constraint firstAttribute="trailing" secondItem="LEX-jy-eWF" secondAttribute="trailing" constant="20" id="oTT-hl-2IR"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="XBw-QV-867"/>
