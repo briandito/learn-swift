@@ -8,7 +8,6 @@
 
 import UIKit
 
-class Data: NSObject {
     let sections = [
         [
             "title": "Learn iOS 11 Design",
@@ -41,4 +40,4 @@ class Data: NSObject {
             "image": "ios11-colors"
         ]
     ]
-}
+
