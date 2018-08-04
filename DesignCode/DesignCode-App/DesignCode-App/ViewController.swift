@@ -89,6 +89,21 @@ extension ViewController: UIScrollViewDelegate{
             backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
         }
         
+        if let collectionView = scrollView as? UICollectionView {
+            for cell in collectionView.visibleCells as! [SectionCollectionViewCell] {
+                
+                let indexPath = collectionView.indexPath(for: cell)
+                let attributes = collectionView.layoutAttributesForItem(at: indexPath!)
+                let cellFrame = collectionView.convert((attributes?.frame)!, to: view)
+                let translationX = cellFrame.origin.x / 5
+                
+                cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
+                
+                print(cellFrame)
+                
+            }
+        }
+        
     }
     
 }
