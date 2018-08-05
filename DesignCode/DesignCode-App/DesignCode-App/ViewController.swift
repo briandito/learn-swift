@@ -102,7 +102,6 @@ extension ViewController: UIScrollViewDelegate{
                 let translationX = cellFrame.origin.x / 5
                 cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
                 
-                
                 cell.layer.transform = animateCell(cellFrame: cellFrame)
                 
                 print(cellFrame)
