@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var bookView: UIView!
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
+    var isStatusBarHidden = false
+    
     @IBAction func playButtonTapped(_ sender: Any) {
         
         let urlString = "https://player.vimeo.com/external/235468301.hd.mp4?s=e852004d6a46ce569fcf6ef02a7d291ea581358e&profile_id=175"
@@ -39,6 +41,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        
         scrollView.delegate = self
         chapterCollectionView.delegate = self
         chapterCollectionView.dataSource = self
@@ -55,6 +59,14 @@ class ViewController: UIViewController {
         
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {
             let toViewController = segue.destination as! SectionViewController
@@ -64,6 +76,28 @@ class ViewController: UIViewController {
             toViewController.sections = sections
             toViewController.indexPath = indexPath
         }
+        
+        isStatusBarHidden = true
+        UIView.animate(withDuration: 0.5, animations: {
+            self.setNeedsStatusBarAppearanceUpdate()
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        isStatusBarHidden = false
+        UIView.animate(withDuration: 0.5) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+        statusBar.backgroundColor = color
     }
 }
 

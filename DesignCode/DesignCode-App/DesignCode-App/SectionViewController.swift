@@ -34,6 +34,9 @@ class SectionViewController: UIViewController {
         progressLabel.text = String(indexPath.row+1) + " / " + String(sections.count)
         
     }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
