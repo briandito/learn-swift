@@ -12,7 +12,6 @@
 		0A0E3DFD20F1F7AD008D2C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E3DFB20F1F7AD008D2C02 /* Main.storyboard */; };
 		0A0E3E0020F1F7AD008D2C02 /* DesignCode_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3DFE20F1F7AD008D2C02 /* DesignCode_App.xcdatamodeld */; };
 		0A0E3E0520F1F7AD008D2C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E3E0320F1F7AD008D2C02 /* LaunchScreen.storyboard */; };
-		0A2ED1272119E24B00256B01 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2ED1262119E24B00256B01 /* images.xcassets */; };
 		0A9DCBBD2114A4F4001DE30B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCBBC2114A4F4001DE30B /* Data.swift */; };
 		0A9DCBBF2114A6D9001DE30B /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCBBE2114A6D9001DE30B /* SectionCollectionViewCell.swift */; };
 		0AD202D52110BB5800A4E04F /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD202D42110BB5800A4E04F /* SectionViewController.swift */; };
@@ -28,7 +27,6 @@
 		0A0E3DFF20F1F7AD008D2C02 /* DesignCode_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesignCode_App.xcdatamodel; sourceTree = "<group>"; };
 		0A0E3E0420F1F7AD008D2C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0E3E0620F1F7AD008D2C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A2ED1262119E24B00256B01 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		0A9DCBBC2114A4F4001DE30B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0A9DCBBE2114A6D9001DE30B /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AD202D42110BB5800A4E04F /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 		0A0E3DEB20F1F7AD008D2C02 = {
 			isa = PBXGroup;
 			children = (
-				0A2ED1262119E24B00256B01 /* images.xcassets */,
 				0A0E3DF620F1F7AD008D2C02 /* DesignCode-App */,
 				0A0E3DF520F1F7AD008D2C02 /* Products */,
 			);
@@ -141,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2ED1272119E24B00256B01 /* images.xcassets in Resources */,
 				0A0E3E0520F1F7AD008D2C02 /* LaunchScreen.storyboard in Resources */,
 				0A0E3DFD20F1F7AD008D2C02 /* Main.storyboard in Resources */,
 			);
