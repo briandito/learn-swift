@@ -1,17 +1,13 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
+      "idiom" : "universal"
     },
     {
       "idiom" : "universal",
       "filename" : "Icon-App-83.5x83.5@2x.png",
+      "unassigned" : true,
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {
@@ -19,6 +15,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "template-rendering-intent" : "original"
+    "template-rendering-intent" : "original",
+    "preserves-vector-representation" : true
   }
 }
