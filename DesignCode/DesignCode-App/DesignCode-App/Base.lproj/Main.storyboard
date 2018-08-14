@@ -700,11 +700,11 @@
                         <viewControllerLayoutGuide type="bottom" id="QIm-GL-XgT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="56s-on-TMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22r-hf-l4G">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="931"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc4-7R-CXk" userLabel="Dialog View">
                                         <rect key="frame" x="20" y="20" width="335" height="680"/>
@@ -744,27 +744,107 @@
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLm-Av-H5v">
-                                                        <rect key="frame" x="150" y="232" width="123" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Login" image="More/logo">
-                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DsA-8q-mdJ">
+                                                        <rect key="frame" x="0.0" y="138" width="335" height="360"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLm-Av-H5v">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Login" image="More/logo">
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-sm-VSA">
+                                                                <rect key="frame" x="0.0" y="60" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Updates" image="More/info">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-Zv-as1">
+                                                                <rect key="frame" x="0.0" y="120" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Read on Safari" image="More/safari">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-v7-yUi">
+                                                                <rect key="frame" x="0.0" y="180" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Community" image="More/community">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rau-Ep-wHI">
+                                                                <rect key="frame" x="0.0" y="240" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Email Support" image="More/email">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi6-Bz-EIF">
+                                                                <rect key="frame" x="0.0" y="300" width="335" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Ambience" image="More/ambience">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="360" id="6Jq-iz-YTa"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only made possible with your kind support. Thank you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-Gp-LZj">
+                                                        <rect key="frame" x="82.5" y="532" width="170" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="33h-yt-qhL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65J-CY-CZG">
+                                                        <rect key="frame" x="114.5" y="607" width="106" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" title="@MengTo" image="More/twitter">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="65J-CY-CZG" firstAttribute="top" secondItem="GDC-Gp-LZj" secondAttribute="bottom" constant="21" id="673-xV-sxe"/>
+                                                    <constraint firstItem="GDC-Gp-LZj" firstAttribute="top" secondItem="DsA-8q-mdJ" secondAttribute="bottom" constant="34" id="8mu-bK-Mig"/>
                                                     <constraint firstItem="vbv-5V-jp8" firstAttribute="centerX" secondItem="tvt-KB-vzt" secondAttribute="centerX" id="915-aT-MuD"/>
                                                     <constraint firstAttribute="height" constant="680" id="Abh-Ta-3kX"/>
                                                     <constraint firstItem="1du-YN-qeq" firstAttribute="top" secondItem="vbv-5V-jp8" secondAttribute="bottom" constant="8" id="BVi-ff-CuG"/>
+                                                    <constraint firstItem="GDC-Gp-LZj" firstAttribute="centerX" secondItem="tvt-KB-vzt" secondAttribute="centerX" id="Nvg-SS-Pbh"/>
+                                                    <constraint firstItem="DsA-8q-mdJ" firstAttribute="leading" secondItem="tvt-KB-vzt" secondAttribute="leading" id="SdO-h4-w7m"/>
                                                     <constraint firstAttribute="trailing" secondItem="1du-YN-qeq" secondAttribute="trailing" constant="20" id="aCn-YE-qQh"/>
                                                     <constraint firstItem="1du-YN-qeq" firstAttribute="leading" secondItem="tvt-KB-vzt" secondAttribute="leading" constant="20" id="d58-hU-x9n"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DsA-8q-mdJ" secondAttribute="trailing" id="d5Z-ov-kJ0"/>
                                                     <constraint firstItem="1du-YN-qeq" firstAttribute="centerX" secondItem="tvt-KB-vzt" secondAttribute="centerX" id="hFD-oR-pc9"/>
                                                     <constraint firstItem="vbv-5V-jp8" firstAttribute="top" secondItem="tvt-KB-vzt" secondAttribute="top" constant="20" id="roO-pS-pLq"/>
+                                                    <constraint firstItem="DsA-8q-mdJ" firstAttribute="top" secondItem="1du-YN-qeq" secondAttribute="bottom" constant="20" id="vZL-t1-yrL"/>
+                                                    <constraint firstItem="65J-CY-CZG" firstAttribute="centerX" secondItem="tvt-KB-vzt" secondAttribute="centerX" id="y3O-LI-O9M"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -799,6 +879,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" selectedImage="Tab Bar/more-active" id="zAD-Ex-X2C"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4si-Jd-dWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1075,7 +1156,13 @@
         <image name="Logo-Apple" width="36" height="44"/>
         <image name="Logo-Google" width="100" height="37"/>
         <image name="Logo-Stripe" width="81" height="33"/>
+        <image name="More/ambience" width="36" height="36"/>
+        <image name="More/community" width="36" height="36"/>
+        <image name="More/email" width="36" height="36"/>
+        <image name="More/info" width="36" height="36"/>
         <image name="More/logo" width="36" height="36"/>
+        <image name="More/safari" width="36" height="36"/>
+        <image name="More/twitter" width="24" height="20"/>
         <image name="Placeholder/image-ring-1" width="70" height="70"/>
         <image name="Placeholder/image-ring-2" width="70" height="70"/>
         <image name="Placeholder/image-ring-3" width="70" height="70"/>
