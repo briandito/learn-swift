@@ -83,12 +83,20 @@ class ViewController: UIViewController {
         })
     }
     
+    //customize the style BEFORE it appears
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         isStatusBarHidden = false
         UIView.animate(withDuration: 0.5) {
             self.setNeedsStatusBarAppearanceUpdate()
         }
+        
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isOpaque = false
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 50)
+        ]
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

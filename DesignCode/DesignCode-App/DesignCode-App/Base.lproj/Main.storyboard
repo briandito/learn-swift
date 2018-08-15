@@ -1152,7 +1152,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yyr-Bl-N3m" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="Tab Bar/home-active" id="6ry-Vw-xGR"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JxD-7F-8oF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="JxD-7F-8oF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
