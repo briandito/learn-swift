@@ -168,6 +168,12 @@ extension HomeViewController: UIScrollViewDelegate{
             }
         }
         
+        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            // Other functionality
+            let navigationIsHidden = offsetY <= 0
+            navigationController?.setNavigationBarHidden(navigationIsHidden, animated: true)
+        }
+        
     }
     
     
